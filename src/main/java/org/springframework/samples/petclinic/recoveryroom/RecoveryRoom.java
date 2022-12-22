@@ -30,7 +30,7 @@ public class RecoveryRoom extends BaseEntity {
 	@Column(nullable=false)
     boolean secure;
     
-    @ManyToOne
+    @ManyToOne(optional=false)
     @JoinColumn(name = "roomType")
     RecoveryRoomType roomType;
 }
